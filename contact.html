@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8"/>
+
+    <link rel="stylesheet" type="text/css" href="contact.css"> 
+
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+    <title>Grid</title>
+
+    <script src="https://kit.fontawesome.com/a1a8a0bbda.js" crossorigin="anonymous"></script>
+    
+
+</head>
+
+
+<script>  
+    function validateform(){  
+    var name=document.myform.name.value;  
+    var lastname=document.myform.lastname.value; 
+    var email=document.myform.email.value;
+    var mobile=document.myform.mobile.value;
+    var inquiry=document.myform.inquiry.value;
+    var message=document.myform.message.value;
+    var checkbox=document.myform.checkbox.checked;
+    
+      
+    if (name==""){  
+      alert("Please enter valid name");  
+      return false;  
+    
+      } 
+      
+      else if(lastname==""){  
+      alert("Please enter last name");  
+      return false;
+    
+      } 
+
+      else if(email==""){  
+      alert("Please enter valid email");  
+      return false;
+    
+      } 
+
+      else if(mobile==""){  
+      alert("Please enter valid Mobile Number");  
+      return false;
+    
+      } 
+      
+      else if (inquiry=="") {
+        alert("Select Inquiry");
+        return false;
+      }
+      
+      else if(message==""){
+        alert("Please enter message");
+        return false;
+    
+      }
+    
+      else if(!checkbox){
+        alert("You must agree to the terms and conditions");
+        return false;
+        
+      }
+    
+    
+    }  
+    </script>  
+
+
+
+<body>
+
+  <header>
+      <a href="index.html"><img src="images/logo001.png"></a>
+       <nav>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="menu.html">Menu</a></li>
+               <li><a href="packages.html">Packages</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <div class="join"><span><li><a href="menu.html">Join/Log in</a></li></span>
+                  <a href="menu.html"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></i></a></div>
+
+        
+           </ul>
+       </nav>
+   </header>
+
+
+
+  <header>
+      <a href="index.html"><img src="images/logo001.png"></a>
+       <nav>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="menu.html">Menu</a></li>
+               <li><a href="packages.html">Packages</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <div class="join"><span><li><a href="menu.html">Join/Log in</a></li></span>
+                  <a href="menu.html"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></i></a></div>
+
+        
+           </ul>
+       </nav>
+   </header>
+
+   
+   <br>
+   <br>
+
+
+
+    <br>
+    <br>
+
+
+
+  
+   <h1><center>Contact Us...</center></h1>
+
+   <p><center>P.O. Box 444 S. Matthew Ricciardo Mawatha, Colombo 05<br>
+
+    Tel: +94 292929290   |  <br>Email: grid@official.com</center></p>
+
+<div class="line"></div>
+
+<br>
+   
+   <center>Send us a message and we’ll get back to you as soon as possible. Looking forward to hearing from you.</center>
+  
+   <br>
+
+   <center><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fields marked with an asterisk (*) are required.</p></center>
+
+
+   
+   <form name="myform" onsubmit="return validateform()">
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name:*<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" style="height: 45px; width: 550px;"><br/>
+    <br> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name:<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lastname" style="height: 45px; width: 550px;"><br/>
+    <br> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:*<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" style="height: 45px; width: 550px;"><br/>
+    <br> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile Number<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mobile" style="height: 45px; width: 550px;"><br/>
+    <br> 
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inquiry:* What are you getting in touch about?<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="inquiry" style="height: 45px; width: 550px;"><br>
+        <br>
+      <option value="">Select an option</option>
+    <option value="General Inquiry">General Inquiry</option>
+    <option value="Media Inquiry">Media Inquiry</option>
+    <option value="Order Issue">Order Issue</option>
+    <option value="Mobile App or website Order">Mobile App or website Order</option>
+
+    </select><br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message:*<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="textfield" id="message" style="height: 150px; width: 550px;"></textarea><br>
+    <br>
+    
+
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="checkbox" value="checkbox"> I agree with terms and conditions<br>
+
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="button">Submit</button>
+    </form>  
+    
+   
+
+
+<br>
+    <br>
+
+
+
+    <br>
+    <br>
+
+
+    <br>
+
+    <div class="line"></div>
+
+
+
+
+    <div class="container3">
+
+       <div class="text2">
+           <h1><span style="color: #000000;">FAQ</span></h1>
+           <p><br><span style="color: #000000;">Here are the most common questions we get asked. If you don’t find the answer you’re looking for, Contact Us for further assistance.</span></p>
+           <br>
+
+           <p><b>1. What is the vision of Grid’s?</b></p><br>
+           <p>Grid’s Vision is to grow Restaurants, serving our Customers, all over the world and be the brand for craveable meals, a great Crew, cool Culture and Active Community Involvement.</p><br>
+
+           <p><b>2. How can I submit feedback from a recent visit to Grid?</b></p><br>
+           <p>Please see our <a href="contact.html">Contact Us</a> page for how you can submit feedback.</p><br>
+
+           <p><b>3. What type of payments do you accept at Grid?</b></p><br>
+           <p>We accept Grid's gift cards, cash, MasterCard, Visa, Discover and American Express.</p>
+           <br>
+           <p><b>4. Where can I order Grid Delivery?</b></p><br>
+           <p>You can order Grid Delivery directly on our website www.grid.com or on our mobile app.  You can also order on Uber Eats, PickMe Food</p>
+           <br>
+           
+
+       </div>
+    </div>
+
+    <div class="line"></div>
+
+
+
+    <br>
+    <br>
+
+
+
+
+    <footer>
+
+    <div class="footer1">
+
+       <br>
+       <br>
+       <img src="images/logo001.png" alt=""><br>
+
+
+       <div class="footer-links">
+               <span style="color: #ffffff;"><a href="index.html">Home&nbsp;&nbsp;|</a>&nbsp;&nbsp;
+               <a href="menu.html">Menu&nbsp;&nbsp;|</a>&nbsp;&nbsp;
+               <a href="about.html">About Us </a><br>&nbsp;&nbsp;
+               <a href="packages.html">Packages&nbsp;&nbsp;|</a>&nbsp;&nbsp;
+               <a href="contact.html">Contact us&nbsp;&nbsp;</a>&nbsp;&nbsp;</span>
+               <br>
+               <br>
+
+               <a href="menu.html">Terms of Use&nbsp;&nbsp;|</a>&nbsp;&nbsp;
+               <a href="about.html">Privacy Policy&nbsp;&nbsp;|</a><br>&nbsp;&nbsp;
+               <a href="menu.html">Your Ad Prefrences&nbsp;&nbsp;|</a>&nbsp;&nbsp;
+               <a href="packages.html">Web Accessibility&nbsp;&nbsp;</a>&nbsp;&nbsp;
+               <br>
+               <br> 
+               <br>   
+               <br>
+
+
+       </div>
+
+    <div class="footer-right">
+       <div>
+           <i class="fa-thin fa-location-dot" style="color: #ffffff;"></i>
+           <p><span style="color: #ffffff;">444 S. Matthew Ricciardo Mawatha, Colombo 05</span></p>
+       </div>
+
+       <div>
+                   <i class="fa-thin fa-phone" style="color: #000000;"></i>
+                   <p><span style="color: #ffffff;">+94 292929290 &nbsp; | &nbsp;grid@official.com</span></p>
+               </div>
+           
+           
+           
+               <div class="footer-right2">
+            
+                <p class="footer-icons">
+                    <span>Follow Us</span>
+          </p>
+    
+            <div class="footer-icons2">
+    
+              <a href="https://www.instagram.com/wendys/"><i class="fa-brands fa-instagram"  style="color: #ffffff;"></i></a>&nbsp;&nbsp;
+              <a href="https://web.facebook.com/wendys/?_rdc=1&_rdr"><i class="fa-brands fa-square-facebook"  style="color: #ffffff;"></i></a>&nbsp;&nbsp;
+              <a href="https://www.tiktok.com/@wendys?lang=en"><i class="fa-brands fa-tiktok"  style="color: #ffffff;"></i></a>&nbsp;&nbsp;
+              <a href="https://x.com/Wendys"><i class="fa-brands fa-twitter"  style="color: #ffffff;"></i></a>&nbsp;&nbsp;
+    
+            </div>
+    
+        </div>
+    
+    </div><br>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+   </footer>
+
+   <p><center>© Copyright. GRID 2024. All rights reserved.</center></p>
+   <br>
+
+
+  </body>
