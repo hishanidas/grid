@@ -1,0 +1,1 @@
+A simple and responsive website for a fictional fast food restaurant, created as part of a college assignment. The site includes a homepage, menu, about us, and contact page designed to simulate a real restaurant's website. 
